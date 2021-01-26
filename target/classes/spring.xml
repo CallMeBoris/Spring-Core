@@ -6,4 +6,6 @@
 
     <bean id="emailService" class="my.study.EmailService"></bean>
 
+    <bean id="prototypeEmailService" class="my.study.EmailService" scope="prototype"></bean>
+
 </beans>

@@ -15,13 +15,32 @@ public class Main {
         //BeanFactory beanFactory = new ClassPathXmlApplicationContext("spring.xml");
 
         ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
-        EmailService emailService = context.getBean("emailService",EmailService.class);
-        System.out.println(emailService);
-        emailService.sendEmail("Boris","Hello");
+        EmailService emailService1 = context.getBean("emailService",EmailService.class);
+        System.out.println("EmailService 1: "+emailService1);
+       // emailService.sendEmail("Boris","Hello");
+
+        ApplicationContext context2 = new ClassPathXmlApplicationContext("spring.xml");
+        EmailService emailService2 = context2.getBean("emailService",EmailService.class);
+        System.out.println("EmailService 2: "+emailService2);
+
+
+        EmailService emailService3 =context.getBean("prototypeEmailService", EmailService.class);
+        EmailService emailService4 =context.getBean("prototypeEmailService", EmailService.class);
+        System.out.println("EmailService 3: "+emailService3);
+        System.out.println("EmailService 4: "+emailService4);
+
+
 
         ApplicationContext context1 = new AnnotationConfigApplicationContext(AppConfig.class);
-        EmailService emailService1 = context1.getBean("emailService", EmailService.class);
-        System.out.println(emailService1);
+        EmailService eService1 = context1.getBean("emailService", EmailService.class);
+        System.out.println("eService 1: "+eService1);
+        EmailService eService2 = context1.getBean("emailService", EmailService.class);
+        System.out.println("eService 2: "+eService2);
         emailService1.sendEmail("Boris2","Hello2");
+
+        EmailService eService3 = context1.getBean("prototypeEmailService", EmailService.class);
+        System.out.println("eService 3: "+eService3);
+        EmailService eService4 = context1.getBean("prototypeEmailService", EmailService.class);
+        System.out.println("eService 3: "+eService4);
     }
 }
