@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85cfd14b-4dd3-4928-9b05-56152891a91f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/study/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/study/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/study/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/study/config/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/study/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/study/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/study/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/study/config/AppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
