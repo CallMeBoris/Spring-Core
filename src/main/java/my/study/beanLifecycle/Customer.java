@@ -4,10 +4,15 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
 import org.springframework.beans.factory.BeanNameAware;
+import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Component;
 
-public class Customer implements BeanNameAware, BeanFactoryAware, ApplicationContextAware {
+import javax.annotation.PostConstruct;
+
+@Component("cust")
+public class Customer implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean {
 
     private String firstName;
 
@@ -40,5 +45,16 @@ public class Customer implements BeanNameAware, BeanFactoryAware, ApplicationCon
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         System.out.println("setApplicationContext... "+applicationContext.isPrototype("cust"));
         this.firstName = "Boris in Application Context";
+    }
+
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("afterPropertiesSet...");
+        this.firstName = "Boris in after properties set";
+    }
+
+    @PostConstruct
+    public void customInit(){
+        System.out.println("customInit...");
+        this.firstName = "Boris in customInit";
     }
 }

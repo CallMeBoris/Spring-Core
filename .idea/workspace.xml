@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="85cfd14b-4dd3-4928-9b05-56152891a91f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/study/beanLifecycle/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/study/beanLifecycle/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-bean-lifecycle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-bean-lifecycle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/study/beanLifecycle/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/study/beanLifecycle/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-bean-lifecycle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-bean-lifecycle.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +31,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="my.study.javaConfig" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Abuzgant\IdeaProjects\springCore\src\main\resources" />
       <recent name="C:\Users\Abuzgant\IdeaProjects\springCore\src\main\java\my\study" />
@@ -44,7 +51,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.JavaConfigMain">
+    <configuration name="DestructionMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.study.destruction.DestructionMain" />
+      <module name="springCore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.study.destruction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaConfigMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.study.javaConfig.JavaConfigMain" />
+      <module name="springCore" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.study.javaConfig.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="my.study.beanLifecycle.Main" />
       <module name="springCore" />
@@ -86,6 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JavaConfigMain" />
+        <item itemvalue="Application.DestructionMain" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.MyMain" />
         <item itemvalue="Application.Main" />
@@ -117,5 +152,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/my/study/beanLifecycle/Address.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
